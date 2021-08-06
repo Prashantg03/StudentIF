@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SIS</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/nivo-lightbox.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/nivo_themes/default/default.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/templatemo-style.css') }}">
+	<link rel='icon' href='./static/download.ico'>
+
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	
+<!-- navigation -->
+
+	<div class="container">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">MCA</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/">HOME</a></li>
+				<li><a href="/about">ABOUT US</a></li>
+				<li><a href="/contact" class="active">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</div>		
+
+<!-- contact header section -->
+<div id="contact-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12"></div>
+		</div>
+	</div>
+</div>
+
+<!-- contact section -->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<h2>Get in touch</h2>
+			</div>
+			<div class="col-md-8 col-sm-8 mt30">
+				<form action="send" method="post" class="reveal-content">
+					<div class="col-md-6 col-sm-6">
+                        <label for="name">NAME</label>
+                        <input name="name" type="text" class="form-control" id="name">
+                      <label for="email">EMAIL</label>
+                        <input name="email" type="email" class="form-control" id="email">
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<label for="message">MESSAGE</label>
+						<textarea name="message" rows="6" class="form-control" id="message"></textarea>
+					</div>
+                    <div class="col-md-6 col-sm-6">
+                    	<button type="submit" name="submit" class="btn btn-default">SEND</button>
+                    </div>
+				</form>
+			</div>
+			<div class="col-md-4 col-sm-4 address">
+				<div>
+					<h3>Email</h3>
+					<p>info@company.com</p>
+				</div>
+				<div>
+					<h3>Phones</h3>
+					<p>010-020-0340 | 090-080-0760</p>
+				</div>
+			</div>
+			<div class="col-md-12 col-sm-12 mt20">
+            	<h3>------------</h3>
+				<div class="google_map mt20">
+					<div id="map-canvas"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-4">
+			<a href="#" class="navbar-brand">MCA</a>
+				<p>Onetel is free Bootstrap v3.3.5 HTML5 layout from 
+                <a rel="nofollow" href="http://www.facebook.com/templatemo" target="_parent">templatemo</a> website.
+                Feel free to use it for your website.</p>
+				<p><i class="fa fa-phone"></i> 010-020-0340</p>
+				<p><i class="fa fa-envelope-o"></i> info@company.com</p>
+              <p><i class="fa fa-globe"></i> www.company.com</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="{{ url_for('static',filename='js/jquery.js' ) }}"></script>
+<script src="{{ url_for('static',filename='js/bootstrap.min.js' ) }}"></script>
+<script src="{{ url_for('static',filename='js/nivo-lightbox.min.js' ) }}"></script>
+<script src="{{ url_for('static',filename='js/custom.js' ) }}"></script>
+
+</body>
+</html>
